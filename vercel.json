@@ -9,6 +9,12 @@
       }
     }
   ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -38,4 +44,16 @@
     }
   ]
 }
+Click "Commit changes"
+🎯 Alternative Solution: Simplified vercel.json
+If you want an even simpler approach, replace the entire vercel.json with this minimal version:
 
+{
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+Thi
